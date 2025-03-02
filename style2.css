@@ -1,3 +1,7 @@
+.*{
+  padding:0;
+  margin:0;
+}
 .container{
   display: flex;
   justify-content:  center;
@@ -25,15 +29,15 @@ body{
   background-size: cover;
 }
 .a{
-  background-image:url("images/image1.jpeg");
+  background-image:url("image1.jpeg");
   
   
 }
 .b{
-  background-image: url("images/image2.jpeg");
+  background-image: url("image2.jpeg");
 }
 .c{
-  background-image:url("images/image\ 3.jpeg") ;
+  background-image:url("image3.jpeg") ;
 }
 p{
   text-align: center;
