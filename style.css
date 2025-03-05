@@ -2,9 +2,8 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(59, 109, 180);
-  border-radius: 36px;
-  margin-bottom: 25px;
+  background-color:#000000;
+  margin-bottom: 0px;
 }
 .logo{
   padding-left: 36px;
@@ -17,14 +16,14 @@ nav ul li{
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 10px;
-  padding-right: 50px;
+  padding-right: 20px;
   transition: transform 0.25s;
 }
 ul{
   padding-right: 20px;
 }
 nav ul li:hover{
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 nav ul li a{
   text-decoration: none;

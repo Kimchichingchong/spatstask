@@ -8,19 +8,19 @@ ul li ul.menu{
   position: absolute;
   z-index: 999;
   display: none;
+  text-align: center;
 }
 ul li:hover ul.menu{
   display: block;
-  background-color:  rgb(59, 109, 180);
+  background-color:  rgb(0, 0, 0);
   width: fit-content;
   border-style: solid;
 }
 ul li:hover ul.menu a{
   color: rgb(255, 255, 255);
   font-size: 15px;
-  position-anchor: k;
 
 }
 ul li:hover ul.menu a:hover{
-  color: aquamarine;
+  color: rgb(245, 255, 252);
 }
