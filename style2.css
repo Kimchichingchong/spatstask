@@ -197,6 +197,7 @@ p{
 .addbook input{
   width:30vw;
   height:5vh;
+  border-radius:3px;
 }
 .addbook button{
   color:white;

@@ -47,6 +47,9 @@ function addbook(event){
   }
   book.append(removebutton);
   document.getElementsByClassName('container')[0].append(book);
+  document.getElementById('bookname').value="";
+  document.getElementById('author').value=""; 
+  document.getElementById('price').value="";
 }
 
 
