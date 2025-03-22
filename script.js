@@ -5,7 +5,13 @@ function scrollTodiv(event) {
     const targetElement = document.getElementById(searchvalue);
     
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      // targetElement.scrollIntoView({ behavior: "smooth" });
+      var x=document.getElementsByClassName('card');
+      for(i=0;i<x.length;i++){
+        x[i].style.display="none";
+      }
+      targetElement.style.display="block";
+      document.getElementById('search').value="";
     } else {
 
       alert("Element not found!");
