@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>bookstore</title>
   <link rel="stylesheet" href="style2.css">
-  <body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
    <div class="superior">
     <nav>
       <h2 class="logo">BookPalace</h2>
@@ -12,12 +19,12 @@
           <a href="#">Categories</a>
           <ul class="menu">
             <li><a href="#">Fiction</a></li>
-            <li><a href="#">Histroy</a></li>
+            <li><a href="#">History</a></li>
             <li><a href="#">Biographies</a></li>
             <li><a href="#">Children</a></li>
             <li><a href="#">Fantasy</a></li>
             <li><a href="#">Crime</a></li>
-            </ul>
+          </ul>
         
         </li>
         <li><a href="#">About Us</a></li>
@@ -30,10 +37,13 @@
         <span class="bar"></span>
       </div>
     </nav>
-    </div>
-   </div>
+      <form class="search">
+      <input type="text" id="search" placeholder="Search">
+      <button onclick="scrollTodiv(event)"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+   
     <section class="container">
-      <div class="card">
+      <div class="card" id="Percy Jackson">
         <div class="image a"> </div>
         <h2 class="title">Percy Jackson</h2>
         <h4 class="titler">Rick Riordan</h4>
@@ -44,7 +54,7 @@
         <button><a href="#">Buy Now</a></button>
       </div>
       <div class="card">
-        <div class="image b"> </div>
+        <div class="image b" id="The Gunslinger"> </div>
         <h2 class="title">The Gunslinger</h2>
         <h4 class="titler">Stephen King</h4>
         <div class="para"><p>The Gunslinger is the first book in Stephen King's "The Dark Tower" series. It follows Roland Deschain, the last gunslinger, as he pursues the enigmatic Man in Black across a desolate, post-apocalyptic landscape. Along the way, Roland confronts his past and faces numerous trials, driven by his quest to reach the Dark Tower and restore order to his world.</p></div>
@@ -53,7 +63,7 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Rich Dad Poor Dad">
         <div class="image c"> </div>
         <h2 class="title">Rich Dad Poor Dad</h2>
         <h4 class="titler">Robert.T.Kiyosaki</h4>
@@ -63,9 +73,9 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Percy Jackson-2">
         <div class="image a"> </div>
-        <h2 class="title">Percy Jackson</h2>
+        <h2 class="title">Percy Jackson-2</h2>
         <h4 class="titler">Rick Riordan</h4>
         <div class="para"><p>Percy Jackson and the Lightning Thief follows the journey of Percy Jackson, a 12-year-old boy who discovers he is a demigod, the son of Poseidon. When Zeus's lightning bolt is stolen, Percy embarks on a quest across America to retrieve it and prevent a catastrophic war between the gods.</p></div>
         <h4 class="titl">Price:₹291</h4>
@@ -73,9 +83,9 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Percy Jackson-3">
         <div class="image a"> </div>
-        <h2 class="title">Percy Jackson</h2>
+        <h2 class="title">Percy Jackson-3</h2>
         <h4 class="titler">Rick Riordan</h4>
         <div class="para"><p>Percy Jackson and the Lightning Thief follows the journey of Percy Jackson, a 12-year-old boy who discovers he is a demigod, the son of Poseidon. When Zeus's lightning bolt is stolen, Percy embarks on a quest across America to retrieve it and prevent a catastrophic war between the gods.</p></div>
         <h4 class="titl">Price:₹291</h4>
@@ -83,9 +93,9 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Percy Jackson-4">
         <div class="image a"> </div>
-        <h2 class="title">Percy Jackson</h2>
+        <h2 class="title">Percy Jackson-4</h2>
         <h4 class="titler">Rick Riordan</h4>
         <div class="para"><p>Percy Jackson and the Lightning Thief follows the journey of Percy Jackson, a 12-year-old boy who discovers he is a demigod, the son of Poseidon. When Zeus's lightning bolt is stolen, Percy embarks on a quest across America to retrieve it and prevent a catastrophic war between the gods.</p></div>
         <h4 class="titl">Price:₹291</h4>
@@ -93,9 +103,9 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Percy Jackson-5">
         <div class="image a"> </div>
-        <h2 class="title">Percy Jackson</h2>
+        <h2 class="title">Percy Jackson-5</h2>
         <h4 class="titler">Rick Riordan</h4>
         <div class="para"><p>Percy Jackson and the Lightning Thief follows the journey of Percy Jackson, a 12-year-old boy who discovers he is a demigod, the son of Poseidon. When Zeus's lightning bolt is stolen, Percy embarks on a quest across America to retrieve it and prevent a catastrophic war between the gods.</p></div>
         <h4 class="titl">Price:₹291</h4>
@@ -103,9 +113,9 @@
         <button><a href="#">Add To Wishlist</a></button>
         <button><a href="#">Buy Now</a></button>
       </div>
-      <div class="card">
+      <div class="card" id="Percy Jackson-6">
         <div class="image a"> </div>
-        <h2 class="title">Percy Jackson</h2>
+        <h2 class="title">Percy Jackson-6</h2>
         <h4 class="titler">Rick Riordan</h4>
         <div class="para"><p>Percy Jackson and the Lightning Thief follows the journey of Percy Jackson, a 12-year-old boy who discovers he is a demigod, the son of Poseidon. When Zeus's lightning bolt is stolen, Percy embarks on a quest across America to retrieve it and prevent a catastrophic war between the gods.</p></div>
         <h4 class="titl">Price:₹291</h4>
@@ -114,31 +124,6 @@
         <button><a href="#">Buy Now</a></button>
       </div>
     </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     <footer>
@@ -151,5 +136,6 @@
         </div>
       </div>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

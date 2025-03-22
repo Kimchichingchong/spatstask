@@ -1,6 +1,7 @@
 *{
   padding:0;
   margin:0;
+  scroll-behavior: smooth;
 }
 nav{
   display: flex;
@@ -40,21 +41,21 @@ nav ul li a{
 }
 nav ul li a:hover{
   color: aquamarine;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
-ul li ul.menu li{
+.menu li{
   display: block;
   padding: 5px;
   font-size: 5px;
 }
-ul li ul.menu{
+.menu{
   width: 100%;
   position: absolute;
   z-index: 999;
   display: none;
   text-align: center;
 }
-ul li:hover ul.menu{
+ul li:hover .menu{
   display: block;
   background-color:  rgb(0, 0, 0);
   width: fit-content;
@@ -78,6 +79,36 @@ ul li:hover ul.menu a:hover{
 .para{
   padding: 10px;
 }
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+  
+}
+.search input{
+  width:90vW;
+  height:5vh;
+  border-radius: 5px;
+}
+
+.search button{
+  background-color: rgb(255, 255, 255);
+  cursor:pointer;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  height:5vh;
+  width:5vh;
+  transition:transform 0.25s,background-color 0.25s;
+}
+.search button:hover{
+  transform: scale(1.1);
+  background-color: rgba(255, 0, 0,0.3);
+}
+
+
+
 body{
   background-color: #ffffff;
 }
