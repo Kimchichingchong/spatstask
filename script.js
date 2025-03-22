@@ -12,5 +12,18 @@ function scrollTodiv(event) {
 
 }
 
+books=document.getElementsByClassName('card');
+
+
+for (let i = 0; i < books.length; i++) {
+  const removebutton = document.createElement('button');
+  removebutton.innerHTML = 'Remove';
+  removebutton.style.color="white";
+  removebutton.onclick = function() {
+        books[i].remove();
+  }
+books[i].append(removebutton);
+
+}
 
 
