@@ -7,6 +7,7 @@ function scrollTodiv(event) {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     } else {
+
       alert("Element not found!");
     }
 
@@ -38,7 +39,7 @@ function addbook(event){
   var book = document.createElement('div');
   book.className = 'card';
   book.id = bookname;
-  book.innerHTML = "<h2 class='title'>"+bookname+"</h2><h4 class='titler'>"+author+"</h4><h4 class='titler'> Price:₹"+price+"</h4><button ><a href='#'>Read More</a></button><button><a href='#'>Add To Wishlist</a></button><button><a href='#'>Buy Now</a></button>" ;
+  book.innerHTML = "<div class='image'></div> <h2 class='title'>"+bookname+"</h2><h4 class='titler'>"+author+"</h4><h4 class='titler'> Price:₹"+price+"</h4><button ><a href='#'>Read More</a></button><button><a href='#'>Add To Wishlist</a></button><button><a href='#'>Buy Now</a></button>" ;
   const removebutton = document.createElement('button');
   removebutton.innerHTML = 'Remove';
   removebutton.style.color="white";
