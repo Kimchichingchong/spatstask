@@ -77,7 +77,7 @@ const container = document.querySelector('.container');
         <h4 class="titler">${book.author}</h4>
         <h4 class="titl">Price:₹${book.price}</h4>
         <button class="readmore" ><a><span>Read More</span> <i class="fa-solid fa-info"></i> </a></button>
-        <button><a><span>Add To Wishlist</span> <i class="fa-solid fa-heart"></i></a></button>
+        <button class="wish"><a><span>Add To Wishlist</span> <i class="fa-solid fa-heart"></i></a></button>
         <button><a><span>Buy Now</span> <i class="fa-solid fa-cart-shopping"></i></a></button>
         <button class="removeBtn"><a><span>Remove</span> <i class="fa-solid fa-trash"></i></a></button>
         `;

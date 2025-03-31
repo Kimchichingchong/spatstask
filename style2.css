@@ -3,6 +3,10 @@
   margin:0;
   scroll-behavior: smooth;
 }
+.darkmode{
+  background-color: #000000;
+  color: #ffffff;
+}
 nav{
   position: fixed;
   width: 100%;
@@ -105,7 +109,22 @@ ul li:hover ul.menu a:hover{
   transform: scale(1.1);
   background-color: rgba(255, 0, 0,0.3);
 }
-
+#mode{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mode span:last-child{
+  display: none;
+}
+.darkmode #mode span:first-child{
+  display: none;
+}
+.darkmode #mode span:last-child{
+  display: block;
+}
 
 
 body{
@@ -116,8 +135,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content:  center;
-  flex-wrap: wrap;
- 
+  flex-wrap: wrap; 
 }
 
 .cover{
@@ -149,6 +167,17 @@ body{
   width: 300px;
   margin: 10px;
   background-color: #dedbd2;
+  border-radius: 20px;
+  transition: transform 0.25s;
+}
+.darkmode .card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 300px;
+  margin: 10px;
+  background-color: #797979;
   border-radius: 20px;
   transition: transform 0.25s;
 }
@@ -335,18 +364,36 @@ button{
   transition:transform 0.25s,background-color 0.25s;
   padding: 5px;
 }
+.darkmode button{
+  background-color:rgb(255, 255, 255);
+  border-radius: 5px;
+  border-style: solid;
+  display: block;
+  justify-self: center ;
+  margin:10px;
+  border-width: 2px;
+  cursor: pointer;
+  transition:transform 0.25s,background-color 0.25s;
+  padding: 5px;
+}
 a{
   text-decoration: none;
   display: flex;
   justify-content: space-between;
   text-align: left;
   color: rgb(255, 255, 255);
-  /* font-weight: bolder; */
-  /* transition:transform 0.25s; */
 }
-/* a:hover{
-  transform: scale(1.1);
-} */
+.darkmode span{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+.darkmode i{
+  color: black;
+}
+
 button:hover{
   transform: scale(1.1);
 }
